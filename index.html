@@ -1,14 +1,98 @@
 <!DOCTYPE html>
-<html> 
+<html>
+  <head>
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="utf-8" />
+    <title>hw-04</title>
+  </head>
 
-<head>
-    <meta charset=utf-8/>
-</head>
+  <body>
+    <h1 id="main__header">hw-04: Event Handling</h1>
+    <div id="main">
+      <div id="left_col">
+        <svg height="530" width="530" id="container">
+          <line
+            x1="35"
+            y1="510"
+            x2="825"
+            y2="510"
+            style="stroke: rgb(0, 0, 0); stroke-width: 5"
+          />
 
+          <line
+            x1="35"
+            y1="0"
+            x2="35"
+            y2="510"
+            style="stroke: rgb(0, 0, 0); stroke-width: 5"
+          />
 
-<body>
+          <circle class="dot" cx="55" cy="410" r="10" />
+          <circle class="dot" cx="110" cy="310" r="10" />
+          <circle class="dot" cx="310" cy="410" r="10" />
+          <circle class="dot" cx="455" cy="55" r="10" />
 
+          <text x="0" y="510" class="small">0</text>
+          <text x="0" y="410" class="small">2</text>
+          <text x="0" y="310" class="small">4</text>
+          <text x="0" y="210" class="small">6</text>
+          <text x="0" y="110" class="small">8</text>
+          <text x="0" y="10" class="small">10</text>
 
-</body>
-
+          <text x="10" y="525" class="small">0</text>
+          <text x="110" y="525" class="small">2</text>
+          <text x="210" y="525" class="small">4</text>
+          <text x="310" y="525" class="small">6</text>
+          <text x="410" y="525" class="small">8</text>
+          <text x="510" y="525" class="small">10</text>
+        </svg>
+      </div>
+      <div id="right_col">
+        <p id="right_col_text"></p>
+        <form class="form">
+          <p>X</p>
+          <select id="x">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <p>Y</p>
+          <select id="y">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <button id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <h1 id="ack">Acknowledgements</h1>
+    <ul>
+      <li>
+        https://stackoverflow.com/questions/19655189/javascript-click-event-listener-on-class
+      </li>
+      <li>
+        https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
+      </li>
+      <li>
+        https://www.petercollingridge.co.uk/tutorials/svg/interactive/javascript/
+      </li>
+      <li>https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle</li>
+    </ul>
+    <script src="./script.js"></script>
+  </body>
 </html>
